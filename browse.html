@@ -1,0 +1,55 @@
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+    }
+
+    #browser .object {
+        padding: 8px 20px;
+        border-bottom: 1px solid #ddd;
+        display: grid;
+        grid-template-columns: 1fr auto auto auto auto;
+    }
+
+    #browser .subtree:not(.open) > .subtree {
+        display: none;
+    }
+
+    #browser .object.directory:hover {
+        background: rgba(255, 255, 0, 0.2);
+        cursor: pointer;
+    }
+
+    .object.file .object-name {
+        opacity: 0.6;
+    }
+
+    .object-tag {
+        margin-left: 40px;
+        border-radius: 4px;
+        font-size: 12px;
+        color: white;
+        font-weight: bold;
+        padding: 2px 8px;
+        opacity: 0.65;
+        background: gray;
+    }
+
+    .object-link {
+        margin-top: 2px;
+        margin-bottom: 2px;
+        display: inline-block;
+    }
+
+    .object-tag.object-size {
+        background: #966;
+    }
+</style>
+
+<body>
+    <main id="browser" data-dirid="-1" data-tab="-1">
+    </main>
+</body>
+
+<script src="browse/csv.js"></script>
+<script src="browse/browse.js"></script>

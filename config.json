@@ -1,0 +1,16 @@
+{
+    "roots": [
+        "ggrz_drive1.csv",
+        "ggrz_drive2.csv",
+        "ggrz_drive3.csv",
+        "recent.csv",
+        "stasiu.csv"
+    ],
+    "show_copy": {
+        "{ggrz_drive1}": false,
+        "{ggrz_drive2}": false,
+        "{ggrz_drive3}": true,
+        "{recent}": false,
+        "{stasiu}": false
+    }
+}
